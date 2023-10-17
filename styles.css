@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+:root {
+    --text-color: #211e0d;
+    --background-color: #ffffff;
+    --primary-color: #77002b;
+    --secondary-color: #e2e2e2;
+    --accent-color: #4fa942;
+    --border-color: #082035;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none; 
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Libre Baskerville', serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* index.php */
+#bodydiv {
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    color: white;
+}
+
+/* index.php */
+#formdiv {
+    background-color: var(--primary-color);
+    border: 1px solid #000000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+main {
+    display: flex;
+}
+
+.right-column {
+    flex: 3 100%;
+    padding: 20px;
+    background-color: var(--background-color);
+    border: 3px solid var(--border-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-div {
+    flex: 1 1 100%;
+    text-align: center;
+}
+
+.product {
+    width: 300px;
+    height: 415px;
+    border: 3px solid var(--border-color);
+    margin: 20px;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    box-sizing: border-box;
+    min-width: 275px;
+}
+
+.product-title {
+    flex: 1 1 100%;
+    text-align: center;
+}
+
+.name {
+    flex: 1 1 100%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.name a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.product-image {
+    display: flex;
+    justify-content: center;
+}
+
+.out-of-stock {
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+}
+
+.product-description {
+    padding: 20px 10%;
+}
+
+.price-div {
+    display: flex;
+    justify-content: right;
+    text-align: center;
+    display: block;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--background-color);
+}
+
+.left-links {
+    display: flex;
+    min-width: 200px;
+}
+
+.left-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+#site-logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#site-title{
+    font-size: 110px;
+    color: var(--primary-color);
+    font-family: 'Libre Baskerville', serif;
+}
+
+#site-slogan {
+    font-size: 34px;
+    color: var(--primary-color);
+    font-family: 'Libre Baskerville', serif;
+}
+
+.right-content {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.cart-icon {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+#cart-item-count {
+    position: absolute;
+    width: 15px;
+    top: -1px;
+    right: 5px;
+    color: var(--text-color);
+    border-radius: 50%;
+    padding: 3px 3px;
+    font-size: 14px;
+    font-weight: bolder;
+    text-align: center;
+}
+  
+.nav-user-info-text {
+    background-color: var(--background-color);
+    padding: 10px;
+    min-width: 200px;
+}
+
+.quantity-input {
+    width: 20px;
+    padding: 5px;
+}
+
+/* Hide the up and down arrows for the number input */
+.quantity-input::-webkit-inner-spin-button,
+.quantity-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.quantity-input[type="number"] {
+    appearance: textfield;
+}
+
+#quantityInput {
+    width: 20px;
+    height: 9px;
+    padding: 5px;
+    text-align: center;
+}
+    
+/* Hide the up and down arrows for the number input */
+#quantityInput::-webkit-inner-spin-button,
+#quantityInput::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#quantityInput[type="number"] {
+    appearance: textfield;
+}
+
+.quantityInput[type="number"] {
+    appearance: textfield;
+}
+
+[id^="quantityInput"] {
+    appearance: textfield;
+    width: 20px;
+    height: 9px;
+    padding: 5px;
+    text-align: center;
+}
+
+th {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+tr:nth-child(odd) {
+    background-color: var(--secondary-color);
+}
+
+.price-quantity-select {
+    display: flex;
+    justify-content: right;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+}
+
+.qr-div {
+    display: flex;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
